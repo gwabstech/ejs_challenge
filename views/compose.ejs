@@ -1,0 +1,76 @@
+<%- include('partials/header'); -%>
+
+    <div class="container mb-5">
+        <h1 class="text-center mb-4">Compose</h1>
+        <form method="POST" action="/compose">
+            <div class="form-group">
+                <label for="title" class="font-weight-bold">Title</label>
+                <input type="text" id="title" name="title" class="form-control form-control-lg mb-3" required>
+                <label for="content" class="font-weight-bold">Content</label>
+                <textarea id="content" name="content" class="form-control form-control-lg mb-3" required
+                    rows="8"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Publish</button>
+        </form>
+    </div>
+
+    <%- include('partials/footer'); -%>
+
+        <style>
+            /* Add some additional styles for responsiveness */
+            @media only screen and (max-width: 768px) {
+
+                /* Reduce the font size of the labels on smaller screens */
+                label {
+                    font-size: 2.0rem;
+                }
+
+                /* Reduce the width of the input and textarea elements on smaller screens */
+                input,
+                textarea {
+                    width: 100%;
+                }
+
+                /* Add some margin to the bottom of the button on smaller screens */
+                button {
+                    margin-bottom: 5rem;
+                }
+            }
+
+            /* Style the form fields */
+            .form-control {
+                border-radius: 0;
+                border: none;
+                border-bottom: 2px solid #007bff;
+                box-shadow: none;
+                font-size: 1.50rem;
+                padding: 0.5rem 1rem;
+                color: #333333;
+                background-color: #ffffff;
+            }
+
+            /* Style the form fields on focus */
+            .form-control:focus {
+                outline: none;
+                box-shadow: none;
+                border-color: #fff;
+            }
+
+            /* Style the button */
+            .btn {
+                border-radius: 0;
+                box-shadow: none;
+                font-size: 2.0rem;
+                padding: 0.5rem 1rem;
+                background-color: #007bff;
+                color: #fff;
+            }
+
+            /* Style the button on hover */
+            .btn:hover {
+                box-shadow: none;
+                background-color: #0056b3;
+            }
+
+            /* Style the footer */
+        </style>
