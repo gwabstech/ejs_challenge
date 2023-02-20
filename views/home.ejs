@@ -1,8 +1,40 @@
 <%- include('partials/header'); -%>
-    <h1>
-        Home
-    </h1>
-    <p>
-        <%= homeStartingContent %>
-    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h4 class="display-4 text-center">
+                        <%= homeStartingContent %>
+                            </h>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center mb-5">
+                    Articles
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-deck">
+                    <% articlesList.forEach(function(article) { %>
+                        <div class="card">
+                            <div class="card-body">
+                                <a class="card-title">
+                                    <%= article.title %>
+                                </a>
+                                <p class="card-text">
+                                    <%= article.content %>
+                                </p>
+                            </div>
+                        </div>
+                        <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <%- include('partials/footer'); -%>
