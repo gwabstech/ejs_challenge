@@ -1,8 +1,8 @@
 <%- include('partials/header'); -%>
 
     <div class="container mb-5">
-        <h1 class="text-center mb-4">Compose</h1>
-        <form method="POST" action="/compose">
+        <h1 class="text-center mb-4">Add Post</h1>
+        <form method="POST" action="/add_past_page">
             <div class="form-group">
                 <label for="title" class="font-weight-bold">Title</label>
                 <input type="text" id="title" name="title" class="form-control form-control-lg mb-3" required>
@@ -33,7 +33,7 @@
 
                 /* Add some margin to the bottom of the button on smaller screens */
                 button {
-                    margin-bottom: 5rem;
+                    margin-bottom: 10rem;
                 }
             }
 
@@ -63,6 +63,7 @@
                 font-size: 2.0rem;
                 padding: 0.5rem 1rem;
                 background-color: #007bff;
+                margin: 5rem auto;
                 color: #fff;
             }
 

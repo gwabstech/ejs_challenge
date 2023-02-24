@@ -34,3 +34,32 @@
 	font-size: 12px;
   color: #fff;
 }
+
+
+/* Define a color scheme for the website */
+:root {
+    --primary-color: #3366cc;
+    --secondary-color: #ff9900;
+}
+
+/* Style the "Read More" buttons on the article cards */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Add some bottom margin to the page content */
+.container {
+    margin-bottom: 3rem;
+}
+
+/* Set the font size and line height for the body text */
+body {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

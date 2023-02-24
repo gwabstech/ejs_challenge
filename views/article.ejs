@@ -1,0 +1,62 @@
+<%- include('partials/header'); -%>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <div class="card">
+                    <img src="<%= article.image %>" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                            <%= article.title %>
+                        </h1>
+                        <p class="card-text">
+                            <%= article.content %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer'); -%>
+
+        <style>
+            body {
+                background-color: #f8f9fa;
+                color: #333;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            h1,
+            h2,
+            h3 {
+                margin-bottom: 1rem;
+                font-weight: 700;
+                line-height: 1.2;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                border: none;
+                border-radius: 0.3rem;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            }
+
+            .card-img-top {
+                object-fit: cover;
+                height: 400px;
+            }
+        </style>
