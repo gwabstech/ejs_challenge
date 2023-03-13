@@ -1,21 +1,17 @@
 <%- include('partials/header'); -%>
 
     <main class="container my-5">
-        <div class="row">
-            <div class="col-12 mb-5">
-                <div class="card">
-                    <img src="<%= article.image %>" class="card-img-top" alt="Article Image">
-                    <div class="card-body">
-                        <h1 class="card-title">
-                            <%= article.title %>
-                        </h1>
-                        <p class="card-text">
-                            <%= article.content %>
-                        </p>
-                    </div>
-                </div>
+        <article class="card">
+            <img src="<%= image %>" class="card-img-top" alt="Article Image">
+            <div class="card-body">
+                <h2 class="card-title">
+                    <%= title %>
+                </h2>
+                <p class="card-text">
+                    <%= content %>
+                </p>
             </div>
-        </div>
+        </article>
     </main>
 
     <%- include('partials/footer'); -%>
